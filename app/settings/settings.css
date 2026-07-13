@@ -1,0 +1,326 @@
+.theme-select-field {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.theme-controls-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto auto;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.theme-controls-row .field,
+.theme-controls-row .button {
+  margin-bottom: 0;
+}
+
+.theme-controls-row .button {
+  align-self: flex-end;
+}
+
+.theme-preview-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.theme-preview-card {
+  padding: 18px;
+  display: grid;
+  grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.theme-preview-name {
+  display: grid;
+  gap: 10px;
+}
+
+.theme-preview-name h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.theme-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--surface-alt);
+}
+
+.theme-preview-swatches {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.theme-preview-swatch {
+  display: block;
+  min-height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.theme-quotation-preview {
+  padding: 20px;
+  background: var(--bg);
+}
+
+.theme-quotation-shell {
+  display: grid;
+  gap: 16px;
+  color: var(--text);
+}
+
+.theme-quotation-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.theme-quotation-topbar h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.theme-quotation-topbar p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.theme-quotation-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.theme-quotation-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.theme-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+}
+
+.theme-shadow-field {
+  grid-column: 1 / -1;
+}
+
+.settings-print-preview {
+  margin-top: 16px;
+}
+
+.layout-preview-card {
+  align-items: stretch;
+}
+
+.layout-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.layout-spec-grid div,
+.layout-preview-metrics div {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.layout-spec-grid span,
+.layout-preview-metrics span,
+.layout-preview-header span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.layout-spec-grid strong,
+.layout-preview-metrics strong {
+  font-size: 16px;
+}
+
+.layout-workspace-preview {
+  overflow: hidden;
+}
+
+.layout-preview-shell {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 12px;
+  min-height: 360px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.layout-preview-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.layout-preview-sidebar span {
+  display: block;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--surface-alt);
+}
+
+.layout-preview-main {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.layout-preview-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.layout-preview-header div {
+  display: grid;
+  gap: 2px;
+}
+
+.layout-preview-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.layout-preview-compact .layout-preview-shell {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px;
+}
+
+.layout-preview-compact .layout-preview-main,
+.layout-preview-compact .layout-preview-metrics,
+.layout-preview-compact .layout-preview-sidebar {
+  gap: 6px;
+}
+
+.layout-preview-compact .layout-preview-header,
+.layout-preview-compact .layout-spec-grid div,
+.layout-preview-compact .layout-preview-metrics div {
+  padding: 8px;
+}
+
+.layout-preview-comfortable .layout-preview-shell {
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.layout-preview-comfortable .layout-preview-main,
+.layout-preview-comfortable .layout-preview-metrics,
+.layout-preview-comfortable .layout-preview-sidebar {
+  gap: 14px;
+}
+
+.layout-preview-comfortable .layout-preview-header,
+.layout-preview-comfortable .layout-spec-grid div,
+.layout-preview-comfortable .layout-preview-metrics div {
+  padding: 16px;
+}
+
+.layout-preview-enterprise .layout-preview-shell {
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 0;
+  padding: 0;
+  min-height: 420px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.layout-preview-enterprise .layout-preview-sidebar {
+  border: none;
+  border-radius: 0;
+  background: #0f172a;
+  padding: 18px 12px;
+}
+
+.layout-preview-enterprise .layout-preview-sidebar span {
+  height: 30px;
+  background: #1e293b;
+}
+
+.layout-preview-enterprise .layout-preview-main {
+  gap: 20px;
+  padding: 22px;
+}
+
+.layout-preview-enterprise .layout-preview-header {
+  margin: -22px -22px 0;
+  border-width: 0 0 1px;
+  border-radius: 0;
+  padding: 16px 22px;
+  box-shadow: none;
+}
+
+.layout-preview-enterprise .layout-preview-metrics {
+  gap: 20px;
+}
+
+.layout-preview-enterprise .layout-preview-metrics div {
+  border-color: #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.layout-preview-enterprise .sales-live-table-card {
+  border-color: #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.layout-preview-enterprise .sales-live-table th {
+  background: #f8fafc;
+  color: #64748b;
+  text-transform: none;
+}
+
+@media (max-width: 900px) {
+  .theme-form-grid,
+  .theme-preview-swatches,
+  .theme-controls-row,
+  .theme-preview-card,
+  .theme-quotation-filters,
+  .layout-spec-grid,
+  .layout-preview-shell,
+  .layout-preview-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-quotation-topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

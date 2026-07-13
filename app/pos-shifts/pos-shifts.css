@@ -1,0 +1,127 @@
+.pos-shift-metrics-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pos-shift-dashboard-range-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 16px;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.pos-shift-toolbar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.card.metric-card {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+}
+
+.pos-shift-filter-bar {
+  display: grid;
+  grid-template-columns: minmax(140px, 4fr) minmax(140px, 4fr) minmax(140px, 3fr);
+  gap: 16px;
+  align-items: flex-end;
+  padding: 18px 20px;
+}
+
+.pos-shift-search-card {
+  padding: 18px 20px;
+}
+
+.pos-shift-search-field {
+  max-width: 460px;
+  margin-bottom: 0;
+}
+
+.pos-shift-modal {
+  width: min(620px, 100%);
+}
+
+.pos-shift-modal-body {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.pos-shift-modal-footer {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pos-shift-open-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-muted);
+}
+
+.pos-shift-open-summary span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pos-shift-open-summary strong {
+  font-size: 14px;
+}
+
+.chip.pos-shift-status-open {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.chip.pos-shift-status-closed {
+  background: #eef2f7;
+  color: #475569;
+}
+
+@media (max-width: 960px) {
+  .pos-shift-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-shift-toolbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pos-shift-open-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pos-shift-modal-footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .pos-shift-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-shift-open-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-shift-search-field {
+    max-width: none;
+  }
+}
